@@ -1,11 +1,15 @@
+import Tarjetas from "./tarjetas/tarjetas"
+
 const ProductList = ({ productos }) => {
   return (
     < >
     {productos.map((producto) => (
-        <div key={producto.id}>{producto.title}</div>
-      ))}
+        <Tarjetas key={producto.id} producto={producto} />
+    ))
+    }
     </>
   )
 }
+
 
 export default ProductList
