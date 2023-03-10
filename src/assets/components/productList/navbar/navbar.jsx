@@ -1,3 +1,4 @@
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
 import { Link } from 'react-router-dom'
 import styles from './navbar.module.css'
 
@@ -18,7 +19,9 @@ const Navbar = () => {
         <p>Hombre</p>
       </Link>
       
-      
+      <IconButton aria-label="cart">
+         <AddShoppingCartIcon />
+       </IconButton>
       
     </nav>
   )

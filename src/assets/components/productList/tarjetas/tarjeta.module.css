@@ -10,7 +10,7 @@
 }
 
 .tarj{
-    background-color:rgb(238, 237, 237);
+    background-color:rgb(118, 124, 233);
     width: 330px;
     height: 430px;
     border-radius: 8px;
@@ -34,6 +34,12 @@
 .titulo{
     font-weight: 200;
     font-size: 25px;
-    
+    color: black;
+}
+
+.price{
+    font-weight: 200;
+    font-size: 25px;
+    color: black;
 }
 
