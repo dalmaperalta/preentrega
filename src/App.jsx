@@ -1,6 +1,5 @@
 import { useEffect, useState} from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Categorias from './assets/components/productList/categorias/categorias'
 import Navbar from './assets/components/productList/navbar/navbar'
 import ProductItem from './assets/components/productList/productItem/item'
 import ProductList from './assets/components/productList/productList'
@@ -34,11 +33,7 @@ function App() {
        path='products/:id' 
       element={<ProductItem productos={productos}/>}
       />
-      <Route
-       path='/categorias/:id' 
-      element={<Categorias productos={productos} />}
-      />
-      
+     
       
     </Routes>
    </div>
