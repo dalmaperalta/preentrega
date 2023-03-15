@@ -18,7 +18,7 @@ function App() {
    <div className={styles.container}>
     <h1 className={styles.titulo}>Tienda online</h1>
 
-    <Navbar />
+    <Navbar  />
 
     <Routes>
        
@@ -33,8 +33,10 @@ function App() {
        path='products/:id' 
       element={<ProductItem productos={productos}/>}
       />
-     
-      
+      <Route
+      path='/categories/:id'
+      element={<ProductItem productos={productos}/>}
+      />
     </Routes>
    </div>
   )

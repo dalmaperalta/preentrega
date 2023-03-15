@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom'
 import styles from './navbar.module.css'
 
@@ -12,7 +11,10 @@ const Navbar = () => {
       <Link to = "products">
         <p>Productos</p>
       </Link>
-      
+     <Link to= "products/categories">
+        <p>Mujer</p>
+     </Link>
+     
     </nav>
   )
 }

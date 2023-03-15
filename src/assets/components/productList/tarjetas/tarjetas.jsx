@@ -8,7 +8,6 @@ const Tarjetas = ({ producto }) => {
       >
       <div>
       </div>
-
         <div className={styles.container}>
             <div className={styles.tarj}>
             <img className={styles.img} src={producto.image} alt="" />
