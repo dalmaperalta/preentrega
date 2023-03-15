@@ -1,6 +1,6 @@
-import { InsertEmoticon } from '@mui/icons-material'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styles from './navbar.module.css'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 const Navbar = () => {
@@ -9,14 +9,20 @@ const Navbar = () => {
       <Link to="/">
         <p>Home</p>
       </Link>
+
       <Link to = "products">
         <p>Productos</p>
       </Link>
+    
+      <Link to = "category/jewelery">
+      <p>Joyeria</p>
+      </Link>
+       
+      <Link to = "/cart">
+       <ShoppingCartIcon className={styles.icono}/>
+      </Link>
       
-     <Link to= "products/categories/:cat">
-        <p>Mujer</p>
-     </Link>
-     
+    
     </nav>
   )
 }
