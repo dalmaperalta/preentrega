@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { InsertEmoticon } from '@mui/icons-material'
+import { Link, NavLink } from 'react-router-dom'
 import styles from './navbar.module.css'
 
 
@@ -11,7 +12,8 @@ const Navbar = () => {
       <Link to = "products">
         <p>Productos</p>
       </Link>
-     <Link to= "products/categories">
+      
+     <Link to= "products/categories/:cat">
         <p>Mujer</p>
      </Link>
      
