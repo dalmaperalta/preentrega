@@ -1,1 +1,6 @@
-
+.body{
+        height: 500px;
+        width: 500px;
+        display: flex;
+        background-image: url(https://previews.123rf.com/images/flippo/flippo0805/flippo080500011/3038296-una-mano-agarra-se%C3%B1oras-varios-colores-brillantes-bolsas-de-la-compra-en-un-fondo-blanco-.jpg);
+}

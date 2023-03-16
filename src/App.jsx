@@ -1,7 +1,7 @@
 import { useEffect, useState} from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Home from './assets/components/home/home'
 import Navbar from './assets/components/productList/navbar/navbar'
-import ProductCateg from './assets/components/productList/productCateg'
 import ProductItem from './assets/components/productList/productItem/item'
 import ItemCateg from './assets/components/productList/productItem/itemCateg'
 import ProductList from './assets/components/productList/productList'
@@ -33,15 +33,15 @@ function App() {
   
   return (
    <div className={styles.container}>
-    <h1 className={styles.titulo}>Tienda online</h1>
+    
 
     <Navbar  />
-   
    
     <Routes>
       
       <Route
-       path='/' element={ <p className={styles.p}>Bienvenidos a Tienda online</p> } 
+       path='/' 
+       element={ <Home /> } 
       />
       <Route
       path='/products'
@@ -52,10 +52,12 @@ function App() {
       element={<ProductItem productos={productos}/>}
       />
      <Route
-     path='/products/category:/cat'
+     path='/category/jewelery'
      element={<ItemCateg categoria={categoria} />}
      />
     </Routes>
+
+   
    </div>
   )
 }

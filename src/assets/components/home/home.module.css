@@ -1,0 +1,18 @@
+.div{
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    padding: 90px;
+
+}
+.container{
+        padding: 30px;
+        display:flex;
+        justify-content: space-evenly;
+        font-size: 50px;
+        background-color: rgb(118, 124, 233);
+        font-family: fantasy;
+        color: rgb(252, 252, 252);
+    }
+    
+   

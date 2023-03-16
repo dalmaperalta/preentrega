@@ -3,7 +3,7 @@ import styles from './item.module.css'
 
 const ProductItem = ({ productos}) => {
     const { id } = useParams()
-    const producto = productos.find((producto)=> producto.id == id )
+    const producto = productos.find((producto=> producto.id == id) )
     return (       
             <div className={styles.container}>
             <div className={styles.tarj}>
